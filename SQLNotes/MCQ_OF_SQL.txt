@@ -1,0 +1,46 @@
+Q.1 What does SQL stand for? 
+	a. Structured Query Language 
+	b. Structured Question Language 
+	c. Strong Question Language
+
+Q. 2 Which SQL statement is used to extract data from a table?
+	a. SELECT 
+	b. OPEN
+	c. GET
+	d. EXTRACT
+
+Q. 3 Which SQL statement is used to insert new data in a       table? 
+	a. INSERT INTO 
+	b. ADD RECORD
+	c. ADD NEW 
+	d. INSERT NEW
+
+Q. 4 With SQL, how do you select a column named "FirstName"         from a Employee table
+	a. SELECT FirstName FROM Employee
+	b. EXTRACT FirstName FROM Employee
+	c. SELECT Employee.FirstName
+
+Q. 5 With SQL, how do you select all the columns from a table      named "Employee"?
+	a. SELECT * FROM Employee
+	b. SELECT Employee
+	c. SELECT * Employee
+	d. SELECT [all] FROM Employee
+
+
+
+Q. 7 With SQL, how can you insert a new record into the "Employee" 
+     table?
+
+	a. INSERT INTO Employee VALUES ('Sunny', 'Jackson') 
+	b. INSERT VALUES ('Bunny', 'Jackson') INTO Employee
+	c. INSERT ('Bunny, 'Jackson') INTO Employee
+
+Q. 8 With SQL, how can you insert "Obama" as the "LastName" in the 
+     "Employee" table?
+	a. INSERT INTO Employee (LastName) VALUES ('Obama') 
+	b. INSERT (' Obama ') INTO Employee (LastName)
+	c. INSERT INTO Employee (' Obama ') LastName
+
+
+
+
