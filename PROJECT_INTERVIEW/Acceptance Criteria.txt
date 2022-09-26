@@ -1,0 +1,126 @@
+## Acceptance Criteria For Claim registration
+
+1) If Mandatory Field values is not Provided then claim should not 
+   be registered and Proper Validation Message should be triggered
+
+2) System should allow claim registration only Valid Policy
+   Valid Policy means
+   a) Cover Note and Delear Flag must be matched
+   b) For Given cover note corresponding policy number must be available
+   c) If Policy is expired then Claim should not be registered on that Policy
+   d) If claim is already Registered on given Policy and its status is 
+      not closed then new claim should not be registered.
+   e) If accident date is future date then claim should not be registered.
+   f) If customer age is below 21 then Claim number should not be registred.
+   g) Claim get registered only valid workshop id 
+   h) If accident date is not within Policy start date and end date then claim should
+      not registered.
+   i) Workhop id , workshop city and delear flag must be matched
+
+3) On success claim status should get updated as "Open"
+=================================================================
+## Acceptance Criteria For getClaim details
+1) If provided claim number not exist then proper validation message
+   should get triggered and field value should be blank
+
+2) If provided claim number not exist then "ack" field value is 0 and
+   and field value should be blank
+
+3) If provided claim number exist then corresponding field data shoul
+   get displayed
+
+===================================================================
+## Acceptance Criteria For Survey Appoitment
+1) System should validate surveyor id,for invalid surveyor id system
+   should trigger validation Message
+
+2) System should validate Surveyor name for invalid surveyor id and surveyor name
+   combination system should trigger validation Message
+
+3) system should validate claim number, for invalid claim number system 
+   should trigger proper validation Message
+
+4) System should appoint surveyor only when claim status is "Open"
+   if claim status is other than open then system should trigger
+   proper validation message
+
+5) ones surveyor is appointed, if trying to appoint surveyor second time
+   then system should trigger proper validation message
+
+6) acknowledgement field value is either 0 or 1 , 
+    0 for failure case and 1 for success case
+7) request and response claim number should be same
+
+8) System should trigger proper validation Message when mandatory field
+   value is not provided
+9) On success claim status should get updated as "SA"
+=======================================================================
+## Acceptance Criteria For Survey Completion
+
+1) System should validate surveyor id,for invalid surveyor id system
+   should trigger validation Message
+
+2) Surveyor id should be same as Survey Appoitment Status
+
+3) system should validate claim number, for invalid claim number system 
+   should trigger proper validation Message
+
+4) System should complete Survey only when claim status is "SA"
+   (SA-Survey Appointed) if claim status is other than open then system should trigger
+   proper validation message
+
+5) ones surveyor is Completed, if trying to complete second time
+   then system should trigger proper validation message
+
+6) acknowledgement field value is either 0 or 1 , 
+    0 for failure case and 1 for success case
+7) request and response claim number should be same
+
+8) System should trigger proper validation Message when mandatory field
+   value is not provided 
+9) On success claim status should get updated as "SC"
+=============================================================
+## Acceptance Criteria Of Document Upload
+1) System should trigger proper validation Message when mandatory field
+   value is not provided 
+
+2) system should validate Claim number
+
+3) Only one document can be uploaded 
+
+4) Document should in PDF format
+
+5) Evey Document should have unique document id
+
+6) To upload document claim status should be SC(Survey Completion)
+   for other status system should not allow document upload
+
+7) System should create a new Folder "ClaimDocs" on E drive and under that
+   for every claim new folder get created and folder name should be
+   claim number and document get placed in that folder only
+
+8) corresponding document entry should be update in JIPL_CLM_DTLS table
+
+9) After successful document upload claim status should get changed as "DU"
+   in DB
+
+10) acknowledgement field value is either 0 or 1 , 
+    0 for failure case and 1 for success case
+=======================================================================
+## Acceptance Criteria for Claim closing
+1) System should trigger proper validation Message when mandatory field
+   value is not provided 
+
+2) We can close only those claim which are registered
+
+3) We can close claim which are in open state(i.e Open, SA, SC or DU)
+
+4) if claim  is already closed then system should trigger proper validation Message
+
+5) On success claim status should get updated as "Closed"
+
+6) acknowledgement field value is either 0 or 1 , 
+    0 for failure case and 1 for success case
+
+
+

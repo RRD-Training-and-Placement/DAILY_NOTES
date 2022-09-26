@@ -1,0 +1,60 @@
+#Project Pre-requisite
+
+1) Execute given table creation script
+
+   a) JIPL_POL_DTLS -> Used to maintain/store Policy Details
+   b) JIPL_CLM_DTLS -> Used to maintain/store Claim details
+   c) JIPL_SURVEY_DTLS -> Used to Configure survey details
+   d) JIPL_DOC_DTLS -> Used to maintain Document details
+   e) JIPL_WORKSHOP_DTLS-> Used to maintain Workshop details
+====================================
+2) Create below sequences
+   a) Sequence for Document Id Creation
+      
+     create sequence doc_id_seq
+     start with 1
+     increment by 1
+-----------------------------------
+   b) Claim number generation sequence
+      
+     create sequence clm_num_seq
+     start with 1000
+     increment by 1;
+------------------------------------
+   c) Sequence For survey Id Creation 
+
+      create sequence survey_id_seq
+      start with 1
+      increment by 1;
+
+==================================
+3) Download war file from google Drive
+   with Provided drive link
+
+4) java must be installed on your System
+ 
+   To check java is installed or not on system
+
+   open command Prompt -> type a command java -version
+
+5) Weblogic server must be installed on system.
+=========================End========================
+
+Selection Process
+1) We will prepare Resume
+2) Convert that Resume into PDF Format
+3) Create an Account/Profile On Nokari
+------------------------
+1) First Recruiter Call to you to take some basic Details
+2) Recruiter share your resume to Techincal Panel
+3) Techical Person go through your resume. If he find sutaible resume
+   then give ack to Recruiter to shedule interview.
+4) Recruiter calls candidate to inform resume has short listed
+5) Recriter arrange interview
+   L1 Techincal round
+   L2 Techincal round
+   Manager round
+   HR Round
+
+6) If all round cleared then offer letter released.
+=========================================================

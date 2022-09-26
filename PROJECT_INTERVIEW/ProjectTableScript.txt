@@ -1,0 +1,32 @@
+#Table Name:-JIPL_POL_DTLS:
+
+create table JIPL_POL_DTLS(pol_no varchar(50) Primary Key,cover_note varchar(50) unique,start_date varchar(50) not null,end_date varchar(50)  not null,delear_flag varchar(50),insert_date date);
+
+#Sample Insert statement is as below
+
+insert into JIPL_POL_DTLS values('2311-5904-00-002','HA-100123','2022-08-01','2023-08-01','HONDA',sysdate);
+================================================
+#Table Name:-JIPL_CLM_DTLS:
+
+create Table JIPL_CLM_DTLS(clm_no varchar(50),pol_no varchar(50),cover_note varchar(250),cust_name varchar(350),place_of_accident varchar(250),vehical_reg_no varchar(250),licen_no varchar(250),cause_of_accident varchar(500),dob varchar(50),date_of_accident varchar(50),driver_name varchar(250),cust_mobileno varchar(12),workshop_id varchar(50),workshop_city varchar(250),delear_clm_id varchar(250),delear_mob_no varchar(12),delear_flag varchar(50),CLM_REG_DATE varchar(50),reg_message varchar(1000),clm_status varchar(50),survey_id varchar(50),survey_app_date varchar(50),survey_done_date varchar(50),survey_compl_remark varchar(2000),doc_id varchar(50));
+============================================================
+#Table Name:-JIPL_SURVEY_DTLS:
+create table JIPL_SURVEY_DTLS(survey_id varchar(50),surveyor_name varchar(250),entry_date varchar(50));
+
+#sample insert statement
+insert into JIPL_SURVEY_DTLS VALUES(survey_id_seq.nextval,'Kedar',TO_Char(sysdate,'YYYY-MM-DD'))
+============================================================
+#Table Name:-JIPL_DOC_DTLS:
+
+create table JIPL_DOC_DTLS(doc_id varchar(50) Primary key,clm_no varchar(50) not null,doc_type varchar(50), class_type varchar(50),doc_path varchar(250),doc_name varchar(250), entry_date varchar(50));
+==============================================================
+#Table Name:-JIPL_WORKSHOP_DTLS:
+
+create table JIPL_WORKSHOP_DTLS(workshop_id varchar(50) Primary key,workshop_name varchar(50) not null,city varchar(50),delear_name varchar(50),delear_mob varchar(50),delear_mail_id varchar(50));
+=====================================================================
+# Table Name : JIPL_COMMON_UTILS
+
+create table JIPL_COMMON_UTILS(id number primary key, field_name varchar(200), field_value varchar(250), entry_date date)
+
+insert into JIPL_COMMON_UTILS VALUES(1,'DOC_UPLOAD_PATH','E:/ClaimDocs', sysdate)
+

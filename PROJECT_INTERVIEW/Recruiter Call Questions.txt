@@ -1,0 +1,135 @@
+Recruiter calls you and ask questions to take some basic details
+before sending resume to techincal panel.
+When recruiter calls you may ask following questions
+========================================
+Recruiter : I am xyz calling from so and so organization.
+            I got your profile. Is this Melisa?
+Melisa: Yes, I am Melisa
+
+Recruiter: Melisa, is this good time to talk you?
+Melisa: Yes, it is right time
+        I am busy, Please give me some time. I will call back you.
+
+Recruiter: Are you looking for job or job change?
+Melisa:    Yes,I am loking for job change.
+
+Recruiter: What is total number of experience?
+Melisa:    I have 2 years and 3 month of experience.
+
+Recruiter: What is you relavent experience in Application Support?
+Melisa:    it is 2 year and 3 months
+
+Recruiter: What is total number of experience in Linux?
+Melisa:    it is 2 year and 3 months
+
+Recruiter: What is total number of experince in SQL?
+Melisa:    it is 2 year and 3 month 
+
+Recruiter: What name of your Organization?
+Melisa:    *** is my organization and working for client XXX
+
+Recruiter : What is name of Payroll organization
+Melisa:    xyz is my Payroll organization
+         
+Recruiter: Is this permanent position?
+Melisa:    yes, I am permanent 
+
+Recruiter: What is your joining date? DOJ(Date Of Joining)
+Melisa:    I am working from *** date
+
+Recruiter: What is you official notice Period?
+Melisa:    My official notice peroid is 30 days
+
+Recruiter: Is this negotiable?
+Melisa:    yes, it is negotiable upto 15 days.
+
+Recruiter: What is you CTC?(Cost To Company)
+Melisa:    3.6 LPA (Lack Per Annum)
+
+Recruiter: What is in hand salary?or What is take home salary
+Melisa:    29,800 and 200 Profession tax deduction. 
+
+Recruiter : Is there PF deduction?
+Melisa    : No PF deduction
+
+Recuiter : What is salary mode? Bank or Cash?
+Melisa   : Bank
+
+Recuiter : Do you have bank statment?
+Melisa   : Yes I have bank statement
+
+Recuiter : Do you have Form no 16
+Melisa   : NO
+
+Recuiter : What is your expected CTC?
+Melisa   : 5 LPA
+
+Recuiter : Is it negotiable?
+Melisa   : yes, it is negotialbe upto 4.5
+
+Recuiter : Do you holding any offer? or Do you have any offer in hand?
+Melisa   : NO.
+     
+Recuiter: What is offer amount and from which organization this offer is
+          and what is location?
+Melisa  : I have offer of 5 from Xyz and location is Mumbai.
+
+Recuiter: You are holding an offer then why are you loking for another offer?
+Melisa  :      Situation dependent ans
+
+Recuiter: on which domain have you worked?
+Melisa  :   Insurance domain
+
+Recuiter: when you available for interview?
+Melisa  : As per techincal panel time.
+
+Recuiter : What is PAN number?
+Melisa:    *****
+
+Recuiter : What is your Aadhar number?
+Melisa:   ****
+
+Recuiter: What is DOB?
+Melisa: **
+
+Recuiter: What is your highest Qualification, Percentage and year of Passing?
+Melisa: 
+
+Recuiter: HSC percentage and Passing year?
+Melisa:
+
+Recuiter: SSC percentage and passing year?
+Melisa:
+
+Recuiter: are you ready to work in shift?
+Melisa:  Yes, I am ready to work in shift and currenly also
+         working in shift. We have two shift Morning and Evening
+Morning shift time is 7:00 to 2:30 and Evening shift time is 2:30 to 11 :pm
+
+Thanks I have taken you details, I will forword your resumen
+to my technical panel. ones shortlisted then i will inform you.
+
+Do you have any query?
+You : What is mode of interview?
+You : How many rounds of interview will get conducted?
+================================
+Interview: Tell me about your self or Introduce about yourself
+
+you:
+ I am Rohit Shetty. 
+ I have total 2.5 years of experience in Appliation and Production support.
+ curently, I am Associated with xyz organization and working for client ***.
+ Currenlty working as L1 as suport Engineer.
+About my skill set
+1) I have hands on exeprience On Linux Commands
+2) I have hands on Experice on sql queries
+
+ My role and resonsibilities are as 
+ 1) I need to resolve the ticket as per requirement
+ 2) I am enolved in Deployment activity
+ 3) I am envolded in Data recon Activity
+ 4) I need to communicate with client via mail or call
+ 5) I am envoled in DR Activity
+ 6) I write SQL query to fetch the data from Database
+ 7) Some time I need to communicate with L2 support team.
+ 8) Some times I need to communicate with DBA and developers

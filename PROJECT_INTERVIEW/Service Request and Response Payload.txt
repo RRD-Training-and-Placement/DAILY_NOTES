@@ -1,0 +1,103 @@
+URL: localhost:9091/clm-register
+Claim Registration Request Payload
+
+{
+    "coverNoteNo":"HA-100123",
+    "customerName": "Kartik",
+    "placeOfAccident": "Nashik",
+    "vehicalRegNo": "MH-12 RT 2632",
+    "licenNo": "MH-0619850034761",
+    "accidentDate":"2022-08-01",
+    "causeOfAccident": "Break Fail",
+    "dateOfBith": "2000-08-17",
+    "driveName":"Nayan Tara",
+    "mobileNo": "9764450273",
+    "workshopId":"1001",
+    "workshopCity":"Pune",
+    "delearClaimId":"PK-22-1801-0000456",
+    "delearMobileNo": "9764450273",
+    "delearFlag": "HONDA"
+    
+}
+
+Claim Registration Response
+{
+    "ack": "1",
+    "message": "Claim Registered Successfully",
+    "clmNo": "OC-2022-9-1000",
+    "coverNoteNo": "HA-100123"
+}
+=============================
+To get claim details
+localhost:9091/clm-get-single/OC-2022-9-1000
+
+Response:
+{
+    "coverNoteNo": "HA-100123",
+    "clmNo": "OC-2022-9-1000",
+    "policyNo": "2311-5904-00-002",
+    "customerName": "Kartik",
+    "placeOfAccident": "Nashik",
+    "vehicalRegNo": "MH-12 RT 2632",
+    "licenNo": "MH-0619850034761",
+    "causeOfAccident": "Break Fail",
+    "dateOfBith": "2000-08-17",
+    "accidentDate": "2022-08-01",
+    "driveName": "Nayan Tara",
+    "mobileNo": "9764450273",
+    "workshopId": "1001",
+    "workshopCity": "Pune",
+    "delearClaimId": "PK-22-1801-0000456",
+    "delearMobileNo": "9764450273",
+    "delearFlag": "HONDA",
+    "regDate": "2022-09-26",
+    "message": "Surveyor Appointed Successfully !",
+    "clmStatus": "SA",
+    "ack": "1",
+    "respmessage": "Data Available"
+}
+=============================
+URL:localhost:9091/appoint-surveyor
+Survey Appoitment Request
+{
+   "surveyorId":"1001",
+   "surveyorName":"Kedar",
+   "claimId":"OC-2022-9-1000"
+}
+
+Reponse Payload
+{
+    "ack": "1",
+    "message": "Surveyor Appointed Successfully !!!",
+    "clmNo": "OC-2022-9-1000"
+}
+=========================
+URL:localhost:9091/survey-compl
+Survey Completion Request PayLoad
+{
+     "surveyorId":"1001",
+	"claimId":"OC-2022-9-1000",
+	"remark":"All details are correct"
+
+}
+ 
+Survey Completion Response Payload
+{
+    "ack": "1",
+    "message": "Surveyor Completion Done Successfully !!!",
+    "clmNo": "OC-2022-9-1000"
+}
+=================================
+URL:localhost:9091/closeClm
+Claim Closing Request
+{
+   "claimNo":"OC-2022-9-1000",
+   "closingRemark":"Payment has done so Closing a claim"
+}
+
+Claim Closing response
+{
+    "ack": "1",
+    "message": "Claim Closed Successfully!!!",
+    "clmNo": "OC-2022-9-1000"
+}
