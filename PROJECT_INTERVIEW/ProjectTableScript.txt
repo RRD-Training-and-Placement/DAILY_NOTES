@@ -4,7 +4,7 @@ create table JIPL_POL_DTLS(pol_no varchar(50) Primary Key,cover_note varchar(50)
 
 #Sample Insert statement is as below
 
-insert into JIPL_POL_DTLS values('2311-5904-00-002','HA-100123','2022-08-01','2023-08-01','HONDA',sysdate);
+insert into JIPL_POL_DTLS values('2311-5904-00-002','HA-100123','2022-08-01','2023-07-31','HONDA',sysdate);
 ================================================
 #Table Name:-JIPL_CLM_DTLS:
 

@@ -1,0 +1,37 @@
+Q> What is mean by Incident?
+-> An unwanted or unexpected event occured during the exetion
+   of process is nothing but incident.
+
+  For Example : Suppose we have virutal meet with client after 15 min
+  but our internate is down.
+
+Q. What is mean by Incident management?
+-> Providing alternative way or restoring services as soon as possible.
+-> Incident management's goal is to resolve the issue as quickly as possible with 
+   temporary solution or with laternative soltion.
+
+
+Q. What is Probelm?
+-> If same incident is happing or occuring again and again then it becomes problem
+
+   Example : If frequently internate is going down. Frequently electricity 
+   supply if off then it becomes problem
+
+Q> What is problem management?
+-> In Problem management first we need to trobule shoot the issue.
+   Find the root cause and give permanet fix for that Problem.
+
+Q. Incident management
+Incident management is the methodical process of logging, categorizing, prioritizing, assigning, and resolving issues in an organization. The goal of incident management is to restart the interrupted services as soon as possible; often, this means a workaround is arranged in place of a permanent solution. Every activity in this practice is documented on a granular scale and pushed to the problem management team, who initiates RCA to develop a permanent solution. You can see that despite problem management being its own process, it's dependent on a robust incident management process.
+
+Q.Change management
+The objective of change management is to increase the success rate of any changes implemented in the organization. A change refers to any modification made to an organization's IT infrastructure, processes, services, products, applications, vendors, or anything else that implicitly or explicitly affects the organization's service delivery.
+
+According to the ITIL® framework, problem management's responsibility concludes with finding the root cause that leads to a solution for a problem, and actually implementing the solution is carried out with change control. Since implementing a change involves managing risk in multiple business units, it requires a process of its own for efficient handling. However, the problem management team should participate in the post-implementation review of a change to ensure consistency between the problem solution and the implemented change associated with it.
+
+
+
+
+
+   
+

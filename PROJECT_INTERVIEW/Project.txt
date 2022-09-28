@@ -1,0 +1,107 @@
+Q. How to cross check table is exist or not?
+-> To check table is exist or not we can use
+   below approach
+   1) use desc command => desc table_name;
+   2) use select statement => Select * from table_name;
+
+If query is executed without error then we can confirm table is exist 
+or created.
+------------------------
+Q. How to cross check sequence is exist or not?
+
+-> select sequence_name.currval from dual;
+
+   select doc_id_seq.currval from dual;
+
+   select doc_id_seq.nextval from dual;
+-------------------------------------------
+Domain : Insurance Domain
+
+We have generally 3 type insurance
+a) General insurance
+b) health Insurance
+c) Life Insurance
+
+Q. Why we take insurance?
+-> To overcome/avoid financial loss.
+
+Q. We take inusrance means we purchase a Policy.
+   Ones we purchase Policy then we get a Policy Number
+   That Policy is active/valid for some particular Peroid.
+   Policy has start date and end Date.
+   The time interval between Policy start date and Policy End date
+   is called Policy active period.
+
+Q. In Our Project we have two Modules
+   1) Policy Module -> Handles Policy related Activities
+      To handle Policy related activities there is a seperate Team
+   2) Claim Module ->  Handles Claim related Activity
+    To handle Claim related activities there is a seperate Team
+
+But I am working on Motor Claim Module.
+Being a insurance oraganization we have tie up with differerent Motor
+Delear Like Honda, Hyundai, Maruti, Ford, Kia, Mahindra,Jeep etc
+
+Ones some thing happens wrong then customer or workshop register a claim.
+Ones claim get registered then its cycle get started and its has to go
+from different phases and As these Phases are as below
+
+1) When claim get registred then its status is Open
+2) Sureveyor get appointed after the claim registration
+   and claim status get changed to Survey Appointed(SA)
+3) After Appoitment of surveyor, surveyor complet its survey
+   and change the status of Claim as "Survey Completion(SC)"
+4) After survey completion required document get upload in the
+   system(For Example - Policy Copy, Driver Licen Copy,
+          RC book, images of vehical and other required document)
+   Ones document get upload then claim status get changes to
+   Document Upload (DU)
+
+5) Ones document get uploaded then next phase is Assessment
+   
+6) Final Assessment- How much payment need to pay from Company
+   to customer.
+7) Payment done to the customer and claim get closed.
+   Claim closed means claim has settled.
+-----------------------------------------
+Stages of Claim
+1) Claim Registration(Satus-Open)
+2) Survey Appoitmment(Status-SA)
+3) Survey Completion(Status-SC)
+4) Document Upload(Status- DU)
+5) Assesment(Status-A)
+6) Final Assesment(Status -FA)
+7) Claim closing/ Claim get settled.(status-Closed)
+
+Note : All these activity get performed at Insurance
+company end.
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

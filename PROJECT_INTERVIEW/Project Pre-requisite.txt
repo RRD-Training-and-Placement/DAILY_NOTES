@@ -7,6 +7,7 @@
    c) JIPL_SURVEY_DTLS -> Used to Configure survey details
    d) JIPL_DOC_DTLS -> Used to maintain Document details
    e) JIPL_WORKSHOP_DTLS-> Used to maintain Workshop details
+   f) JIPL_COMMON_UTILS
 ====================================
 2) Create below sequences
    a) Sequence for Document Id Creation
