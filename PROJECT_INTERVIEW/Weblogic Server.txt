@@ -1,0 +1,82 @@
+Server Name: Weblogic
+Server Version: 12 C
+
+Q. Which midle ware you are using?
+Ans: Weblogic 
+
+Weblogic Server Type: Application server
+#Project Configuration Steps
+
+1) Start system
+
+2) Login to Oracle Database -either by using Browser
+   or Toad Tool
+
+3) For Testing Purpose Configure one Policy in
+   JIPL_POL_DTLS Table
+
+insert into JIPL_POL_DTLS values('2311-5904-00-001','HA-100123','2022-09-01','2023-08-31','HONDA',sysdate);
+
+Then cross check data in the table 
+
+select * from JIPL_POL_DTLS
+
+4) Configure Surveyor Details in "JIPL_SURVEY_DTLS" table as below
+
+insert into JIPL_SURVEY_DTLS VALUES(survey_id_seq.nextval,'Kedar',TO_Char(sysdate,'YYYY-MM-DD'))
+
+select * from JIPL_SURVEY_DTLS
+
+5) Configure Workshop Id in "JIPL_WORKSHOP_DTLS" table 
+
+insert into JIPL_WORKSHOP_DTLS values(1001,'Vedant Honda','Pune','HONDA','9999999999','vedant@gmail.com')
+  
+6) Configure Document Upload Path in "JIPL_COMMON_UTILS" table
+
+  insert into JIPL_COMMON_UTILS VALUES(1,'DOC_UPLOAD_PATH','E:/ClaimDocs', sysdate)
+
+ 
+7) Create Table : JIPL_WS_LOGS
+
+Create Table JIPL_WS_LOGS(logid number, service_name varchar(250),resp_msg varchar(2000),identifier varchar(200), entry_date timestamp)
+
+===============================================
+Q. Which type of Application can be run on Weblogic server?
+Ans: Java based application
+
+Q. On which type of Application have handled or worked?
+-> Java Based Application and Application type is
+   RestFull Web Services
+
+To unstall weblogic server 
+Go to C:\oracle\oracle_home\oui\bin
+
+and run "deinstall.cmd" If operating system is Windows
+    run  "deinstall.sh"  If operating system is linux
+
+Q. How to start weblogic  server?
+Ans: To start web logic server we need to run "startWebLogic.cmd" on command
+prompt if operating system is windows
+
+If operating system is Linux then run "startWebLogic.sh" file on terminal
+
+Q. Where weblogic start up file located?
+
+C:\oracle\oracle_home\user_projects\domains\rrd_domain
+
+=>To login Admin console
+
+http://localhost:7001/console
+
+1) Server Type: Application server.
+2) Default Port of Weblogic Server=7001
+3) Start the Administration Server-> 
+C:\oracle\oracle_home\user_projects\domains\rrd_domain
+
+Open Command Prompt and set path and java home
+and execute below command- > startWebLogic.cmd for windows OS
+                          -> startWebLogic.sh for Linux OS
+
+4) Access the WebLogic Server Administration Console
+Open a browser window and enter the console URL
+http://localhost:7001/console

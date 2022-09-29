@@ -4,7 +4,7 @@ create table JIPL_POL_DTLS(pol_no varchar(50) Primary Key,cover_note varchar(50)
 
 #Sample Insert statement is as below
 
-insert into JIPL_POL_DTLS values('2311-5904-00-002','HA-100123','2022-08-01','2023-07-31','HONDA',sysdate);
+insert into JIPL_POL_DTLS values('2311-5904-00-001','HA-100123','2022-09-01','2023-08-31','HONDA',sysdate);
 ================================================
 #Table Name:-JIPL_CLM_DTLS:
 
@@ -23,10 +23,15 @@ create table JIPL_DOC_DTLS(doc_id varchar(50) Primary key,clm_no varchar(50) not
 #Table Name:-JIPL_WORKSHOP_DTLS:
 
 create table JIPL_WORKSHOP_DTLS(workshop_id varchar(50) Primary key,workshop_name varchar(50) not null,city varchar(50),delear_name varchar(50),delear_mob varchar(50),delear_mail_id varchar(50));
+
+insert into JIPL_WORKSHOP_DTLS values(1001,'Vedant Honda','Pune','HONDA','9999999999','vedant@gmail.com')
 =====================================================================
 # Table Name : JIPL_COMMON_UTILS
 
 create table JIPL_COMMON_UTILS(id number primary key, field_name varchar(200), field_value varchar(250), entry_date date)
 
 insert into JIPL_COMMON_UTILS VALUES(1,'DOC_UPLOAD_PATH','E:/ClaimDocs', sysdate)
+==================================
+#Table : JIPL_WS_LOGS
 
+Create Table JIPL_WS_LOGS(logid number, service_name varchar(250),resp_msg varchar(2000),identifier varchar(200), entry_date timestamp)
