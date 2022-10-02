@@ -1,4 +1,7 @@
 URL: localhost:9091/clm-register
+http://192.168.56.1:7001/JIPL-CLM-APPLICATION-0.0.1-SNAPSHOT/clm-register
+HTTP Method: POST
+
 Claim Registration Request Payload
 
 {
@@ -17,7 +20,6 @@ Claim Registration Request Payload
     "delearClaimId":"PK-22-1801-0000456",
     "delearMobileNo": "9764450273",
     "delearFlag": "HONDA"
-    
 }
 
 Claim Registration Response
@@ -30,6 +32,10 @@ Claim Registration Response
 =============================
 To get claim details
 localhost:9091/clm-get-single/OC-2022-9-1000
+
+http://192.168.56.1:7001/JIPL-CLM-APPLICATION-0.0.1-SNAPSHOT/clm-get-single/OC-2022-9-1000
+
+Method : GET
 
 Response:
 {
@@ -58,6 +64,11 @@ Response:
 }
 =============================
 URL:localhost:9091/appoint-surveyor
+
+http://192.168.56.1:7001/JIPL-CLM-APPLICATION-0.0.1-SNAPSHOT/appoint-surveyor
+
+HTTP Method: POST
+
 Survey Appoitment Request
 {
    "surveyorId":"1001",
@@ -73,9 +84,14 @@ Reponse Payload
 }
 =========================
 URL:localhost:9091/survey-compl
+
+http://192.168.56.1:7001/JIPL-CLM-APPLICATION-0.0.1-SNAPSHOT/survey-compl
+
+HTTP Method: POST
+
 Survey Completion Request PayLoad
 {
-     "surveyorId":"1001",
+        "surveyorId":"1001",
 	"claimId":"OC-2022-9-1000",
 	"remark":"All details are correct"
 
@@ -89,6 +105,11 @@ Survey Completion Response Payload
 }
 =================================
 URL:localhost:9091/closeClm
+
+http://192.168.56.1:7001/JIPL-CLM-APPLICATION-0.0.1-SNAPSHOT/closeClm
+
+HTTP Method: PUT
+
 Claim Closing Request
 {
    "claimNo":"OC-2022-9-1000",

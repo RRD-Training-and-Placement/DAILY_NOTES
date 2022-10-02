@@ -1,0 +1,97 @@
+Q.Which  command is used to count the total number of lines, words, and characters contained in a file?
+-> wc command
+Q. Which command  is used to remove files?
+-> rm  
+Q. Among the following command which is used with vi editors to delete a single character?
+   i) a ii) x iii) y iv) z
+-> x
+Q. Which command is used to add a new user to the system?
+-> useradd or adduser
+Q. Which component is considered as core component of the Linux operating system?
+-> kernel
+Q. Identify the OS which is not based on Linux.
+    a) UbunTu 2) CentOS 3) Read Hat 4)BSD
+-> BSD
+Q. Which command is used to display the operating system name
+-> uname
+Q. Which option of ls command used to view file inode number?
+-> ls -i
+Q. Using which of the following command can hidden files be viewed
+  a) ls -h b) ls -l c) ls -a d) ls -k
+-> ls -a
+Q. Identify the command which is used to display the unix version.
+   a) uname -t b) uname -r c) uname -n d) kernel
+-> uname -r
+Q. Choose the following statement is true or false: 
+  Directory is a type of file.
+  a) true b) false
+-> true
+Q. Which  command is used to sort the lines of data in a file in alphabetical order?
+-> sort file_name
+Q. Which command is used to set terminal IO characteristic?
+a) tty
+b) ctty
+c) ptty
+d) stty
+-> stty
+Q. What command shows you how long it has been since the server was rebooted?
+-> uptime
+Q. find the files whose has permission as 764 and changes the permission to 777
+-> find . -type f -perm 764 -exec chomd 777 {} \;
+Q. Find the top running proceses by highest memory and CPU usage
+-> ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -5 (For Memory)
+-> ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head -5 (For CPU)
+Q. write a command to find top 5 large files?
+-> find . -type f -printf '%s %p \n'| sort -nr| head -5
+   or
+   find . -type f | sort -nr| head -5
+Q. write a command to print only non-blank lines from a file
+-> grep -v '^$' File_name
+Q. write a command to display only link files?
+-> ls -l | grep '^l'
+Q. Write a command to count only hidden  directory
+-> ls -a -d .?* |wc -l
+Q. Write a command to convert all file and directory names to upper 
+   case which are present in current working directory
+-> ls | tr '[a-z]' '[A-Z]'
+Q. Write a command to display the characters from 10 to 20 from each line of a
+   student.txt file
+-> cut -c10-20 student.txt
+Q. whcih command is used to check space on server?
+-> df command
+Q. I have a file which has 10 pages
+   now i want read the content of line by line and page by page
+   which command will you use to open a file
+-> use more or less command
+Q. Write a command to copy the file /etc/passwd to Movie Directory
+-> cp /etc/passwd Movie
+Q. write a command to print line 1 to 10, 15 and 30 to 35
+   from /etc/passwd
+-> sed -n '1,10p;15p;30,35p' /etc/passwd
+Q. Write a command to print every line twice from /etc/passwd
+-> sed 'p' /etc/passwd
+Q. Write a command to cut first 5 characters from Demo.txt File
+-> cut -c1-5 Demo.txt
+Q. Which command is used to  know system is 32 bit or 64 bit?
+-> arch
+Q. Write a command to display  today's date in UTC format
+-> date -u
+Q. Write a command to select only those lines containing "july" as a whole word?
+-> grep -w 'july' File_name
+Q.Write a command  for below requirement?
+ 1) Copy from m1.txt to m2.txt 
+->  cp m1.txt m2.txt
+ 2) Copy the data from A1.txt A2.txt, A3.txt into A4.txt
+->  cat A1.txt A2.txt A3.txt > A4.txt
+ 3) Copy F1.txt and F2.txt File data into Directory July
+->  cp F1.txt F2.txt July
+ 4) Copy all files from Directory Vehical to Directory Honda
+->  cp Vehical/ Honda
+ 5) Copy Directory Vehical into Hyundai
+->  cp Vehical Hyundai
+ 6) Rename F1.txt to F2.txt
+->  mv F1.txt F2.txt
+ 7) Create a soft link for F1.txt file
+->  ln -s F1.txt F1_soft.txt
+ 8) Create a hard Link of F1.txt File
+->  ln F1.txt F1_hard.txt

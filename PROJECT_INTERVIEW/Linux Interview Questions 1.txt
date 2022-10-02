@@ -1,0 +1,273 @@
+Q. What is use of pwd command?
+-> To Print Current working directory path
+Q. What is use of ls command?
+-> To List out all files and directories from current path or from particular path
+Q. All command related binary executable files are present in which
+   directory?
+-> bin directory
+Q. super user related binary executable files are present in which
+   directory?
+-> sbin directory
+Q. What is difference between bin and sbin directory?
+-> ans is available in notes
+Q. All system related configuration files present in which directory?
+-> ans is available in notes
+Q. All user related information present in which file?
+-> /etc/password
+Q. All group related information present in which file?
+-> /etc/group
+Q. All device related files are present in which location?
+-> /dev
+Q. The files which are required for system boot or system start up
+   are present in which location?
+-> ans is available in notes
+Q. What is use of man command?
+-> To get help for a particular Command
+Q. If we want to navigate from one directory to another directory
+   then which command is used?
+-> cd command is used
+Q. How to navigate from one directory to another directory?
+-> By using cd command
+Q. Tell the meaning of following commands
+  1) cd ..  => To go one step back
+  2) cd ../ => To go one step back
+  3) cd../../ => To go two step back
+  4) cd../../.. => To go Three step back
+  5) cd - => To go previous working directory
+  6) cd ~ => To go user's home directory
+
+Q. Write a command to list out files and directory from current 
+   working directory?
+-> ls
+
+Q. Write a command to list out files and directories from 
+   A/B/C 
+-> ls A/B/C
+Q. How to create directory in Linux? or Which command is used to
+   create a directory?
+-> To create a directory use mkdir command
+Q. write a command to list out all files and directories in reverse order?
+-> use ls command with -r option
+Q. write a command to list out all files including hidden files?
+-> ls -a
+Q. How will you list out hidden files?
+-> By using ls command with -a option
+Q. To list out hidden files which option need to use with ls command?
+-> -a option is used
+Q. write a command to list out all files with long information?
+-> ls -l
+Q. Write a command to create direcctory named "College"
+-> mkdir College
+Q. Write a command to create a directories named College1 College2 College3 in one command
+-> mkdir College1 College2 College3
+Q. Guess how many directories will get created when below command is executed.
+   1) mkdir A,B,C,D => one directory created with name A,B,C,D
+   2) mkdir "Linux Java" => One Directory get Created with name Linux Java
+   3) mkdir Linux Java => Two directories get created
+
+Q. Which command is used to remove an Empty Directory 
+-> rmdir
+Q. Write a command to remove D1 D2 D4 and D3 directory in one command
+-> rm -rf D1 D2 D3 D4 
+Q. can we delete files with help of rmdir command?
+-> No, we cannot delete files with rmdir command, we can delete only empty directory
+   with the help of rmdir command
+Q. Which command is used to create an Empty file?
+-> touch
+Q. Which command is used to change the time stamp of file?
+-> touch
+Q. There is a file with some content and we using below
+   command what will happen
+
+   touch abc.txt
+-> Content from file remain same but time stamp of file get changed
+
+Q. Which of the following commands are used to display the 
+   file content
+  1) touch -> NO 
+  2) cat -> Yes
+  3) head -> Yes
+  4) tail -> Yes
+  5) more -> Yes
+  6) less -> Yes
+  7) echo -> No
+  8) tac  -> Yes
+  9) rev  -> Yes
+
+Q. What will be out for the following command?
+
+   head Abc.txt -> Print top 10 lines from Abc.txt File
+
+   head -10 Abc.txt -> Print top 10 lines from Abc.txt File
+
+   head -5 Abc.txt -> Print top 5 lines from Abc.txt File
+
+Q. What is difference between rm and rmdir command?
+-> Ans is available in notes
+Q. what is out put of the following command?
+  
+   rm -irfv ABC
+
+-> -i option ask for permission before deletion 
+   -r delete files recursively
+   -f remove forcefully
+   -v print message 
+
+Q. If we want to display file content page by page which command
+   is used?
+-> we can use more or less command
+Q. What is difference between more and less command?
+-> Ans is available in notes
+Q. What is use of cp command?
+-> To copy file or directory
+
+Q.Write a command  for below requirement?
+ 1) Copy from R1 to R2 -> cp R1 R2
+ 2) Copy the data from A1.txt A2.txt, A3.txt into A4.txt
+-> cat A1.txt A2.txt A3.txt > A4.txt
+ 3) Copy F1.txt and F2.txt File data into Directory India
+-> cp F1.txt F2.txt India
+ 4) Copy all files from Directory A to Directory B
+-> cp A/* B
+ 5) Copy Directory A into B
+-> cp A B
+ 6) Rename F1.txt to F2.txt
+-> mv F1.txt F2.txt
+ 7) Create a soft link for F1.txt file
+-> ln -s F1.txt F1_soft.txt
+ 8) Create a hard Link of F1.txt File
+-> ln  F1.txt F1_hard.txt
+ 9) Create a hard link for Directory A
+-> We can't create hard link for a directory, we can create only soft link for directory
+ 10) Create a soft link for Directory ABC
+-> ln -s ABC ABC_soft
+ 11) Display file content in ascending order
+-> sort File_name
+ 12) We have file with numeric data like below
+     12345
+     098745
+     123456
+     098457
+     5673488
+     AAAAAA
+     BBBBB
+     CCCC
+Now my requirement is I want to display unique content from 
+a file write a command for that.
+-> sort -u
+Q. Which commands are used to compare two files
+-> To compare file we can use -cmp, diff, sdiff
+Q. What is use of wc command?
+-> To Count number of lines, words and characters from a file
+Q. Which command is used to create tar file?
+-> Create tar file or to create archive file
+Q. Which command is used to create zip file?
+-> gzip
+Q. Which command is used to unzip?
+-> gunzip or gzip command with -d option
+Q. Can we compress a directory directly using gzip command?
+-> No
+Q. Write a command to change the permission of a F1.txt as 
+   execute for owner, read for group and other.
+-> chmod 144 F1.txt
+Q. Write a command to search Abc.txt a file in the current working
+   directory
+-> find . -type f -name Abc.txt
+Q. Write a command to search Abc named Directory in the current working
+   directory
+-> find . -type d -name Abc
+Q. Write a Command to find only files from current working location
+   who has file extention as "log"
+-> find . -type f -name "*.log"
+Q. Write a command to Find all directories from current location
+   whose name start with "Kbc"
+-> find . -type f -name 'kbc*'
+Q. If we execute below command then what will be the out put
+   find AC
+-> It will find directory AC and its sub-directories
+Q. List out all Files which are present in "Oct" Directory
+   using find command?
+-> find Oct -type f 
+Q. List all empty files from current location
+-> find . -type -empty
+Q. List all files from current location which are created 10 days back
+-> find . -type f -ctime -10
+Q. Find all files from current location which are created 10 days back
+   and move to ABC directory
+-> find . -type d -ctime -10 -exec mv {} ABC \;
+Q. What is difference between find and locate command ?
+-> Ans is available in notes
+Q. What is use of grep command?
+-> To search a pattern
+Q. Write a command to search "Lemon" in all text files?
+-> grep -i 'Lemon' '*.txt'
+Q. Write a command to search "lemon", "Orange" in Fruit.txt file
+-> frep -e 'lemon' -e 'Orange' Fruit.txt
+Q. We have SubjectInfo.txt file, write a command for below requirement
+   1) display the lines which start with 'The'
+   -> grep '^The' SubjectInfo.txt
+   2) Display all lines which do not start with vowels
+   -> grep '^[^aeiou]' SubjectInfo.txt
+   3) Display all lines which start end vovels
+   -> grep '^[^aeiou]' SubjectInfo.txt
+   4) Display only blanks lines
+   -> grep '^[^aeiou]' SubjectInfo.txt
+   5) Display lines except blank lines 
+   -> grep -v '^$'  SubjectInfo.txt
+   6) Delete blank lines from a File and 
+   -> grep -v '^$'  SubjectInfo.txt > New_File_name
+   7) Print line number 4 10 and 25
+   -> use sed command
+   8) Delete line number 4 10 and 35
+   -> use sed command
+   9) Print header line
+   -> use sed command
+   10) Print footer line
+   -> use sed command
+   11) Add # symbol to start of every line
+   -> use sed command
+   12) Remove # symbol from line 10, 15 and 20 -> use sed command
+   13) Display second character from 2, 5 and 10 line number
+   ->  use cut command in combination with sed command
+   14) Display 2, 3 and 10 character from 2, 5 and 10 line number
+   -> use cut command in combination with sed command
+   15) Cut the data based on : and display 1,3 and 5 field
+   -> use cut command
+   16) Seperate the words on the basis of space and print fourth
+       field using awk command.
+   17) Seperate the words on the basis of : and print fourth
+       field using awk command.
+   18) convert all lower case characters into upper case from line number 2
+   -> use tr command in combination with sed command
+Q. What is use of uptime command?
+-> To know how long system is running
+Q. What is use of Whoami command?
+-> To know current loged use name
+Q. What is use of Who command?
+-> To know user name
+Q. Which command is used to know the CPU utilization?
+-> Top
+Q. What is difference between df and du?
+-> check ans in notes
+Q. List out all running process?
+-> ps -r
+Q. Write a command to check memory usage of process having ID 401785
+-> pmap process_id
+-> pmap 401785
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

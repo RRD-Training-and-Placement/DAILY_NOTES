@@ -80,3 +80,7 @@ and execute below command- > startWebLogic.cmd for windows OS
 4) Access the WebLogic Server Administration Console
 Open a browser window and enter the console URL
 http://localhost:7001/console
+=======================================
+
+
+
